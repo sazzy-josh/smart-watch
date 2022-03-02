@@ -82,23 +82,53 @@ h2{
     /* display: flex;
     align-items: center; */
     margin-top: 120px;
+    position: relative;
 }
+
+#input-time{
+  position: absolute;
+  left: 32%;
+  top: 12%;
+    color:#ca3d22;
+ }
 #textContent{
-    width: 70%;
+    width: 90%;
     margin-top: 100px;
 }
+
 #icon {
     position: absolute;
-    left: 150px;
-    top: 190px;
+    left: 40%;
+    top: 15%;
     color: #ca3d22;
     animation-name: heart;
     animation-duration: 50s;
 }
 
+header .toggle{
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left:10px ;
+}
+
 #content .tnone{
     display: none;
 }
+input.nosubmit {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    margin-top: 4px;
+    outline: #2c1502;
+    border: 1px solid #555;
+    max-width: 400px;
+    float: right;
+    padding: 9px 4px 4px 30px;
+     background: whitesmoke url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 10px center;
+  }
+  
 
 
 
@@ -107,12 +137,17 @@ h2{
 }
 
 
-
-
-#input-time{
-  
-   color:#ca3d22;
+footer{
+    background: #000;
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 i,p{
     font-size: 20px;
@@ -127,7 +162,7 @@ i,p{
     margin: 5px 0;
 }
 
-#Btntime,#buy, #Btnheart{
+#Btntime, #Btnheart{
     padding: 7px;
     background-color: #312c2b;
     color: white;
@@ -141,12 +176,53 @@ i,p{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-#buy{
-    margin: 10px 0;
-    background-color: #2c1502;
-    padding: 10px;
 
-}
+.button-59 {
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgb(155, 132, 132);
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    fill: #000;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 38px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-59:focus {
+    color: #171e29;
+  }
+  
+  .button-59:hover {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+  }
+  
+  .button-59:active {
+    border-color: rgb(101, 53, 156);
+    color: rgb(8, 24, 48);
+    fill: rgb(163, 167, 173);
+  }
+  
+  @media (min-width: 768px) {
+    .button-59 {
+      max-width: 100px;
+    }
+  } 
+
 
 @media only screen and (min-width:310px) and (max-width:640px) {
  #container{
@@ -159,7 +235,10 @@ i,p{
     flex-direction: column;
 }
 #textContent{
-    margin: 20px;
+    margin: 15px;
+}
+#textContent h2{
+    font-size: 22px;
 }
 #watchImage{
     display: flex;
@@ -170,13 +249,17 @@ i,p{
 
 #input-time{
     position: absolute;
-    left: 50;  
+    left: 39%;  
     top:50%  
 }
 #icon{
     position: absolute;
     top: 35%;
     left: 45%;
+}
+#textContent > p{
+    font-size: 17px;
+   
 }
     
 }

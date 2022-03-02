@@ -6,7 +6,13 @@ let img = document.getElementById('img')
 let BtnTime =document.getElementById('Btntime')
 let Btnheart =document.getElementById('Btnheart')
 let buy = document.getElementById('buy')
+let toggle = document.getElementById('Toggle')
 
+toggle.addEventListener('click',function(){
+   if(toggle.click){
+      alert("😂😂Sorry Boss‼This Feature is not yet available")
+   }
+})
 
 buy.addEventListener('click',function(){
    if(buy.click){
