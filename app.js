@@ -27,6 +27,7 @@ let inputTime = document.getElementById('input-time')
 black.addEventListener('click',function(){
    img.src="./img/black.png"
    img.alt = "black_img"
+   
 })
 
 red.addEventListener('click',function(){
@@ -44,6 +45,7 @@ red.addEventListener('click',function(){
  orange.addEventListener('click',function(){
     img.src='./img/red.png';
     img.alt = "orange_img";
+
 
  })
 

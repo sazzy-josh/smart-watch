@@ -87,9 +87,10 @@ h2{
 
 #input-time{
   position: absolute;
-  left: 32%;
+  left: 35%;
   top: 12%;
-    color:#ca3d22;
+    color:#dfd3d0;
+    font-size: 15px;
  }
 #textContent{
     width: 90%;
@@ -143,7 +144,8 @@ input.nosubmit {
 
 footer{
     background: #000;
-    color: white;
+    font-size: 10px;
+    color: rgb(241, 228, 228);
     width: 100%;
     height: 40px;
     display: flex;
@@ -155,12 +157,13 @@ footer{
 
 i,p{
     font-size: 20px;
-    color: #ca3d22;
+    color: #e4dad8;
 }
 
 #textContent p{
-    margin: 17px 0; 
+    margin: 5px 0; 
     color: grey;
+    font-size: 12px;
 }
 #features{
     margin: 5px 0;
@@ -270,7 +273,8 @@ i,p{
     left: 45%;
 }
 #textContent > p{
-    font-size: 17px;
+    font-size: 13px;
+    font-weight: normal;
    
 }
     
