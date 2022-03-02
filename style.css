@@ -125,9 +125,13 @@ input.nosubmit {
     border: 1px solid #555;
     max-width: 400px;
     float: right;
-    padding: 9px 4px 4px 18px;
-     
-  }
+    padding: 9px 4px 4px 15px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
   
 
 
@@ -177,52 +181,58 @@ i,p{
     -o-border-radius: 10px;
 }
 
-.button-59 {
-    align-items: center;
-    margin: 10px 0;
-    background-color: rgb(155, 132, 132);
-    border: 2px solid #000;
+.button-50 {
+    
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
     box-sizing: border-box;
-    color: #000;
+    color: #fff;
     cursor: pointer;
-    fill: #000;
-    font-family: Inter,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    height: 38px;
-    min-width: 140px;
-    outline: 0;
-    padding: 0 17px;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 20px auto;
+    overflow: visible;
+    padding: 12px 40px;
     text-align: center;
-    text-decoration: none;
-    transition: all .3s;
+    text-transform: none;
+    touch-action: manipulation;
     user-select: none;
     -webkit-user-select: none;
-    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
   }
   
-  .button-59:focus {
-    color: #171e29;
+  .button-50:focus {
+    text-decoration: none;
   }
   
-  .button-59:hover {
-    border-color: #06f;
-    color: #06f;
-    fill: #06f;
+  .button-50:hover {
+    text-decoration: none;
   }
   
-  .button-59:active {
-    border-color: rgb(101, 53, 156);
-    color: rgb(8, 24, 48);
-    fill: rgb(163, 167, 173);
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
   }
   
   @media (min-width: 768px) {
-    .button-59 {
-      max-width: 100px;
+    .button-50 {
+      padding: 12px 50px;
     }
-  } 
-
+  }
+  
 
 @media only screen and (min-width:310px) and (max-width:640px) {
  #container{
@@ -251,7 +261,8 @@ i,p{
 #input-time{
     position: absolute;
     left: 41%;  
-    top:50%  
+    top:50% 
+     
 }
 #icon{
     position: absolute;
