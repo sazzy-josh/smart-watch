@@ -7,6 +7,19 @@ let BtnTime =document.getElementById('Btntime')
 let Btnheart =document.getElementById('Btnheart')
 let buy = document.getElementById('buy')
 let toggle = document.getElementById('Toggle')
+let colors = document.querySelectorAll(".c1")
+let colorList = Array.from(colors)
+console.log(colorList)
+
+colorList.forEach(color =>{
+   color.addEventListener("click",function(e){
+      colorList.forEach(item =>{
+         item.classList.remove("active")
+
+         this.classList.add("active")
+      })
+   })
+})
 
 toggle.addEventListener('click',function(){
    if(toggle.click){
@@ -26,25 +39,29 @@ let inputTime = document.getElementById('input-time')
 
 black.addEventListener('click',function(){
    img.src="./img/black.png"
-   img.alt = "black_img"
-   
+   img.alt = "black_img"   
 })
 
 red.addEventListener('click',function(){
     img.src='./img/grey.png'
     img.alt = "red_img"
- 
+
+      
+    
  })
 
  blue.addEventListener('click',function(){
     img.src='./img/blue.png'
     img.alt = "blue_img"
     
+      
+    
  })
 
  orange.addEventListener('click',function(){
     img.src='./img/red.png';
     img.alt = "orange_img";
+   
 
 
  })
