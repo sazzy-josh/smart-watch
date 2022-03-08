@@ -9,7 +9,25 @@ let buy = document.getElementById('buy')
 let toggle = document.getElementById('Toggle')
 let colors = document.querySelectorAll(".c1")
 let colorList = Array.from(colors)
-console.log(colorList)
+let span = document.getElementsByTagName('span')
+let spanList = Array.from(span)
+console.log(spanList)
+// console.log(colorList)
+
+//This Functionality not yet working
+// spanList.forEach(checks => {
+//    checks.addEventListener("click", function(){
+//       spanList.forEach(list => {
+//          let child = list.firstChild
+//          list.removeChild(child)
+         
+
+//           let i = document.createElement("i")
+//           i.classList ="tick bi bi-check"
+//           this.appendChild(i)
+//       })
+//    })
+// })
 
 colorList.forEach(color =>{
    color.addEventListener("click",function(e){
